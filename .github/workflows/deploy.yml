@@ -53,10 +53,6 @@ jobs:
         run: |
           pnpm run generate-sitemap  
 
-      - name: Add CNAME
-        run: |
-          echo "mx-space.js.org" > out/CNAME
-
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
